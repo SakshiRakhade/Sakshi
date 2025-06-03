@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Seminar Registration</title>
+
+  <!-- FontAwesome Icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+  <!-- Link to external CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h2>College Seminar Registration</h2>
+    <form action="#" method="post">
+      
+      <div class="input-group">
+        <i class="fas fa-user"></i>
+        <input type="text" name="name" placeholder="Full Name" required>
+      </div>
+
+      <div class="input-group">
+        <i class="fas fa-phone"></i>
+        <input type="tel" name="mobile" placeholder="Mobile Number" required pattern="[0-9]{10}">
+      </div>
+
+      <div class="input-group">
+        <i class="fas fa-envelope"></i>
+        <input type="email" name="email" placeholder="Email Address" required>
+      </div>
+
+      <div class="input-group">
+        <i class="fas fa-code-branch"></i>
+        <select name="branch" required>
+          <option value="">Select Branch</option>
+          <option value="CSE">Computer Science (CSE)</option>
+          <option value="ECE">Electronics (ECE)</option>
+          <option value="ME">Mechanical (ME)</option>
+          <option value="CE">Civil (CE)</option>
+          <option value="EE">Electrical (EE)</option>
+        </select>
+      </div>
+
+      <div class="input-group">
+        <i class="fas fa-calendar-alt"></i>
+        <select name="year" required>
+          <option value="">Select Year</option>
+          <option value="1st">1st Year</option>
+          <option value="2nd">2nd Year</option>
+          <option value="3rd">3rd Year</option>
+          <option value="4th">4th Year</option>
+        </select>
+      </div>
+
+      <div class="input-group">
+        <i class="fas fa-university"></i>
+        <input type="text" name="institute" placeholder="Institute Name" required>
+      </div>
+
+      <button type="submit" class="btn">
+        <i class="fas fa-paper-plane"></i> Register
+      </button>
+
+    </form>
+  </div>
+
+</body>
+</html>
